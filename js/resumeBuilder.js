@@ -12,7 +12,7 @@ var bio = {
 		github : "briancwise",
     	twitter : "@briancwise",
     	location: "Brooklyn, NY" },
-    welcomeMessage : "Brian Wise is a web developer with a background in journalism, classical music and digital media",
+    welcomeMessage : "Brian Wise is a web developer in training with a background in digital media",
 	skills : ["Javascript", " CSS", " HMTL", " jQuery"],
 	biopic : "images/fry.jpg",
 };
