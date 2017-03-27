@@ -7,12 +7,12 @@ var bio = {
 	name : "Brian Wise",
 	role : "Web Developer",
 	contacts : {
-		email : "Brianwisenyc@gmail.com",
-		mobile : "646-319-8970",
+		mobile : "555-555-5555",
+		email : "myemailaddress@gmail.com",
 		github : "briancwise",
-    	location: "Brooklyn, NY",
-    	twitter : "@briancwise" },
-    welcomeMessage : ["Brian Wise is a web developer with a background in journalism, classical music and digital media"],
+    	twitter : "@briancwise",
+    	location: "Brooklyn, NY" },
+    welcomeMessage : "Brian Wise is a web developer with a background in journalism, classical music and digital media",
 	skills : ["Javascript", " CSS", " HMTL", " jQuery"],
 	biopic : "images/fry.jpg",
 };
@@ -62,14 +62,14 @@ var work = {
 	employer : "Chicago Symphony Orchestra",
 	title : "Producer",
 	location : "Brooklyn, NY",
-	dates : "December 2016 - Present",
+	dates : "In Progress",
 	description : "Producing radio broadcasts for the CSO"
 },
 {
 	employer : 'Freelance Journalist',
 	title : 'Writer and Editor',
 	location : 'Brooklyn, NY',
-	dates : '1998 - Present',
+	dates : '1998 - 2017',
 	description : 'Writing for various news outlets',
 }
   ]
@@ -107,7 +107,6 @@ var projects = {
 	dates : "February 2017",
 	description : "A Javascript and HTML-based resume",
 	images: ["/images/Brian-Wise-Istanbul.JPG", "images/fry.jpg"],
-	display: function() {}
 },
 {
 	title: "Radio Project",
@@ -117,16 +116,6 @@ var projects = {
 }
   ]
 };
-
-// function displayProject() {
-// 	for (sampleProject in sampleProjects.projects){
-// 	$("#projects").append(HTMLprojectStart);
-
-// var formattedprojectTitle = HTMLprojectTitle.replace("%data%", projects.sampleProjects[project].title);
-// $(".project-entry:last").append(HTMLprojectTitle);
-// }
-
-// displayProject;
 
 
 function displayProjects() {
@@ -160,7 +149,7 @@ var education = {
        name: "Northwestern University",
        location: "Evanston, IL",
        degree: "Masters",
-       majors: "Musicology",
+       majors: ["Musicology", "Journalism"],
        dates: "1995-96",
        url: "www.Northwestern.edu"
     },   
@@ -168,8 +157,8 @@ var education = {
     	name: "University of Michigan",
     	location: "Ann Arbor, MI",
     	degree: "Bachelors",
-    	majors: "Musicology",
-    	dates: "1991-95",
+    	majors: ["Musicology", "communications"],
+    	dates: "1991-1995",
     	url: "www.umich.edu"
     },
 ],
@@ -178,8 +167,7 @@ var education = {
 		title: "Front-end Web Development",
 		school: "Udacity", 
 		dates: "2017", 
-		url: "Udacity.com",
-		display: function() {},
+		url: "Udacity.com"
 }
 ]
 };
@@ -228,3 +216,4 @@ for (school in education.onlineCourses){
 displayOnlineEducation();
 
 $("#mapdiv").append(googleMap);
+
