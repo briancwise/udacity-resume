@@ -7,8 +7,8 @@ var bio = {
 	name : ["Brian Wise"],
 	role : ["Web Developer"],
 	contacts : {
-		email : "Brianwisenyc@gmail.com",
-		mobile : "646-319-8970",
+		email : "myemailaddress@gmail.com",
+		mobile : "555-555-5555",
 		github : "briancwise",
     	location: ["Brooklyn, NY"],
     	twitter : "@briancwise" },
@@ -223,7 +223,5 @@ for (school in education.onlineCourses){
 }
 displayOnlineEducation();
 
-function projects.display() {
-$("#mapDiv").append(googleMap);
-};
+$("#mapdiv").append(googleMap);
 
