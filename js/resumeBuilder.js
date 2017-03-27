@@ -4,17 +4,17 @@
 
 
 var bio = {
-	name : ["Brian Wise"],
-	role : ["Web Developer"],
+	name : "Brian Wise",
+	role : "Web Developer",
 	contacts : {
-		email : "myemailaddress@gmail.com",
-		mobile : "555-555-5555",
+		email : "Brianwisenyc@gmail.com",
+		mobile : "646-319-8970",
 		github : "briancwise",
-    	location: ["Brooklyn, NY"],
+    	location: "Brooklyn, NY",
     	twitter : "@briancwise" },
-    bioPic : ["images/fry.jpg"],
     welcomeMessage : ["Brian Wise is a web developer with a background in journalism, classical music and digital media"],
 	skills : ["Javascript", " CSS", " HMTL", " jQuery"],
+	biopic : "images/fry.jpg",
 };
 
  var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
@@ -61,16 +61,16 @@ var work = {
   {
 	employer : "Chicago Symphony Orchestra",
 	title : "Producer",
+	location : "Brooklyn, NY",
 	dates : "December 2016 - Present",
-	description : "Producing radio broadcasts for the CSO",
-	location : "Brooklyn, NY"
+	description : "Producing radio broadcasts for the CSO"
 },
 {
 	employer : 'Freelance Journalist',
 	title : 'Writer and Editor',
+	location : 'Brooklyn, NY',
 	dates : '1998 - Present',
-	description : 'Writing for various outlets around the world.',
-	location : 'Brooklyn, NY'
+	description : 'Writing for various news outlets',
 }
   ]
 };
@@ -106,11 +106,14 @@ var projects = {
 	title : "Online Resume", 
 	dates : "February 2017",
 	description : "A Javascript and HTML-based resume",
+	images: ["/images/Brian-Wise-Istanbul.JPG", "images/fry.jpg"],
+	display: function() {}
 },
 {
 	title: "Radio Project",
 	dates: "March 2017",
 	description: "Radio broadcasts for the CSO",
+	images: ["/images/Brian-Wise-Istanbul.JPG", "images/fry.jpg"],
 }
   ]
 };
@@ -157,7 +160,7 @@ var education = {
        name: "Northwestern University",
        location: "Evanston, IL",
        degree: "Masters",
-       major: "Musicology",
+       majors: "Musicology",
        dates: "1995-96",
        url: "www.Northwestern.edu"
     },   
@@ -165,17 +168,18 @@ var education = {
     	name: "University of Michigan",
     	location: "Ann Arbor, MI",
     	degree: "Bachelors",
-    	major: "Musicology",
+    	majors: "Musicology",
     	dates: "1991-95",
     	url: "www.umich.edu"
     },
 ],
 	"onlineCourses": [
 	{
-		school: "Udacity", 
 		title: "Front-end Web Development",
+		school: "Udacity", 
 		dates: "2017", 
-		url: "Udacity.com"
+		url: "Udacity.com",
+		display: function() {},
 }
 ]
 };
@@ -224,4 +228,3 @@ for (school in education.onlineCourses){
 displayOnlineEducation();
 
 $("#mapdiv").append(googleMap);
-
