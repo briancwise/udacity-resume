@@ -49,7 +49,7 @@ var HTMLschoolDates = '<div class="date-text">%data%</div>';
 var HTMLschoolLocation = '<div class="location-text">%data%</div>';
 var HTMLschoolMajor = '<em><br>Major: %data%</em>';
 
-var HTMLonlineClasses = '<h4>Online Classes</h4>';
+var HTMLonlineClasses = '<h3 class="onlinehead">Online Classes</h3>';
 var HTMLonlineTitle = '<a href="#">%data%';
 var HTMLonlineSchool = '- %data%</a>';
 var HTMLonlineDates = '<div class="date-text">%data%</div>';
@@ -77,10 +77,10 @@ var clickLocations = [];
 
 function logClicks(x,y) {
   clickLocations.push(
-    {
-      x: x,
-      y: y
-    }
+  {
+    x: x,
+    y: y
+  }
   );
   console.log('x location: ' + x + '; y location: ' + y);
 }
@@ -211,7 +211,7 @@ function initializeMap() {
     var service = new google.maps.places.PlacesService(map);
 
     // Iterates through the array of locations, creates a search object for each location
-      locations.forEach(function(place){
+    locations.forEach(function(place){
       // the search request object
       var request = {
         query: place
@@ -246,5 +246,5 @@ window.addEventListener('load', initializeMap);
 // and adjust map bounds
 window.addEventListener('resize', function(e) {
   //Make sure the map bounds get updated on page resize
- map.fitBounds(mapBounds);
+  map.fitBounds(mapBounds);
 });
