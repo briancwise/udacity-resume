@@ -3,7 +3,7 @@ var bio = {
 	role: "Web Developer",
 	contacts: {
 		mobile: "555-555-5555",
-		email: "Brianwisenyc@gmail.com",
+		email: "fake-email@wordpress.com",
 		github: "briancwise",
 		twitter: "@briancwise",
 		location: "Brooklyn, NY"
